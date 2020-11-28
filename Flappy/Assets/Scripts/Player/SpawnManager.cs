@@ -8,7 +8,6 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager Singleton;
     
     public GameObject zolla;
-    public GameObject plane;
     public Transform zollaContainer;
 
     public Vector3 instantiationPoint;
@@ -35,10 +34,6 @@ public class SpawnManager : MonoBehaviour
     {
         if (more)
         {
-            instantiationPoint = new Vector3(transform.localPosition.x + nuovaMisura, transform.localPosition.y, transform.localPosition.z);
-            plane.transform = 
-            Instantiate(zolla, instantiationPoint, Quaternion.identity, zollaContainer);
-            nuovaMisura = nuovaMisura + unità;
             instantiationPoint = new Vector3(transform.localPosition.x + nuovaMisura, transform.localPosition.y, transform.localPosition.z);
             Instantiate(zolla, instantiationPoint, Quaternion.identity, zollaContainer);
             nuovaMisura = nuovaMisura + unità;
