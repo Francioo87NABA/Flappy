@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
 
     public float interpolator;
 
+    public bool stop;
+
     public Transform pointZero, pointOne;
 
     public Rigidbody myRigidbody;
@@ -22,20 +24,20 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.right * rightSpeed * Time.deltaTime;
+        if (!stop)
+        {
+            transform.position += transform.right * rightSpeed * Time.deltaTime;
+       
+            //interpolator = FaceExpressionManager.Singleton.mouthOpenValue;
         
-        
-        //myRigidbody.velocity = transform.right * rightSpeed * Time.deltaTime;
-
-        //transform.position = Vector3.Lerp(pointZero.position, pointOne.position, interpolator);
-        
-        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 
-            Mathf.Lerp(pointZero.localPosition.z, pointOne.localPosition.z, interpolator));
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 
+                Mathf.Lerp(pointZero.localPosition.z, pointOne.localPosition.z, interpolator));
+        }
     }
 
     IEnumerator PlayerBegunRun()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         rightSpeed = 7;
     }
