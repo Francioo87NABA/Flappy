@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (more)
         {
-            instantiationPoint = new Vector3(transform.localPosition.x + nuovaMisura, transform.localPosition.y, transform.localPosition.z);
+            instantiationPoint = new Vector3(transform.localPosition.x + nuovaMisura, transform.localPosition.y + 0.68f, transform.localPosition.z);
             Instantiate(zolla, instantiationPoint, Quaternion.identity, zollaContainer);
             nuovaMisura = nuovaMisura + unità;
             more = false;

@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
 
     public int rightSpeed;
+    
 
     public float interpolator;
+    
 
     public bool stop;
+    
 
     public Transform pointZero, pointOne;
+
 
     public Rigidbody myRigidbody;
     
@@ -39,6 +44,6 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        rightSpeed = 7;
+        rightSpeed = 5;
     }
 }
