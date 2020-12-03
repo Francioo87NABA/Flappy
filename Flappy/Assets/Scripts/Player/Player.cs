@@ -16,9 +16,7 @@ public class Player : MonoBehaviour
     
 
     public Transform pointZero, pointOne;
-
-
-    public Rigidbody myRigidbody;
+    
     
     // Start is called before the first frame update
     void Start()

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = System.Object;
 
 public class Obstacle : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class Obstacle : MonoBehaviour
             player.rightSpeed = stop;
             player.stop = true;
             SpawnManager.Singleton.end = true;
+        }
+
+        if (other.CompareTag("Aratro"))
+        {
+            Destroy(gameObject);
         }
     }
 }

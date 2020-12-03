@@ -55,6 +55,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: e61e481012baa7049a167e20b4ef71a5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TextureSample2:
         m_Texture: {fileID: 2800000, guid: e61e481012baa7049a167e20b4ef71a5, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -67,26 +71,34 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GrassNoiseSpeed: 0.15
     - _GrassNoiseSpeed2: 0.15
+    - _HeighMask: 0.73
     - _HeighMask2: 0.73
-    - _Metallic: 0
+    - _Metallic: 0.05
     - _Metallic1: 0.05
     - _Mode: 0
+    - _NoiseScale: 0.02
     - _NoiseScale2: 0.02
+    - _NoiseSpeed: 0.15
     - _NoiseSpeed2: 0.15
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
+    - _Smothness: 0.47
     - _Smothness1: 0.47
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _WindStrength: 6
     - _WindStrength2: 6
+    - _WindVariation: 0.3
     - _WindVariation2: 0.3
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 0.3962264, g: 0.06480644, b: 0, a: 1}
     - _MainColor1: {r: 0.18867922, g: 0.002669984, b: 0.0283264, a: 1}
   m_BuildTextureStacks: []
