@@ -21,6 +21,7 @@ public class SpawnManager : MonoBehaviour
 
     public bool more;
     public bool end;
+    
 
     private void OnEnable()
     {

@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
 
-    public int rightSpeed;
+    public int speed;
     
 
     public float interpolator;
@@ -29,12 +29,16 @@ public class Player : MonoBehaviour
     {
         if (!stop)
         {
-            transform.position += transform.right * rightSpeed * Time.deltaTime;
-       
-            //interpolator = FaceExpressionManager.Singleton.mouthOpenValue;
-        
+            transform.position += transform.right * speed * Time.deltaTime;
+
             transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 
                 Mathf.Lerp(pointZero.localPosition.z, pointOne.localPosition.z, interpolator));
+        }
+
+        if (GameManager.Singleton.speedIsChanged)
+        {
+            speed = GameManager.Singleton.playerSpeed;
+            GameManager.Singleton.speedIsChanged = false;
         }
     }
 
@@ -42,6 +46,6 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        rightSpeed = 5;
+        speed = 5;
     }
 }

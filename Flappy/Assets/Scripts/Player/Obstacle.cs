@@ -13,7 +13,7 @@ public class Obstacle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Player player = other.GetComponent<Player>();
-            player.rightSpeed = stop;
+            player.speed = stop;
             player.stop = true;
             SpawnManager.Singleton.end = true;
         }

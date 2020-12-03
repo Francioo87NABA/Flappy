@@ -233,4 +233,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myFace: {fileID: 3666995655832401404}
-  maxInstanceDebug: {fileID: 0}
+  maxInstanceDebug: {fileID: 5505612544675808946}
