@@ -51,7 +51,7 @@ public class SpawnManager : MonoBehaviour
             randomRotation = UnityEngine.Random.Range(50, -50);
             GameObject roccia = Instantiate(rocks[random], ObstacleInstantiationpoint, Quaternion.Euler(0, randomRotation, 0), obstacleContainer);
             float randomScale = 0;
-            randomScale = UnityEngine.Random.Range(0.9f, 1.4f);
+            randomScale = UnityEngine.Random.Range(0.9f, 1.2f);
             roccia.transform.localScale = new Vector3(randomScale, randomScale, randomScale);
             more = false;
         }

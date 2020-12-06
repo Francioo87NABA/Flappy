@@ -75,8 +75,8 @@ Material:
     - _NoiseSpeed: 0.15
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _PlayerPushStrenght: 10
-    - _PlayerRadius: 2
+    - _PlayerPushStrenght: 13
+    - _PlayerRadius: 2.1
     - _SmoothnessTextureChannel: 0
     - _Smothness: 0.47
     - _SpecularHighlights: 1
