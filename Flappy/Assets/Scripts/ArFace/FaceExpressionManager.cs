@@ -11,6 +11,7 @@ public class FaceExpressionManager : MonoBehaviour
     public float mouthOpenValue;
 
     public Text DebugText;
+    public Text DebugText2;
 
     public FaceExpressionInstance currentFaceInstance;
 
@@ -23,6 +24,15 @@ public class FaceExpressionManager : MonoBehaviour
     void Update()
     {
         DebugText.text = mouthOpenValue.ToString();
+        
+        if (currentFaceInstance != null)
+        {
+            DebugText2.text = "there is face";
+        }
+        else
+        {
+            DebugText2.text = "there is no face";
+        }
     }
     
     public void SetStandardFaceData()

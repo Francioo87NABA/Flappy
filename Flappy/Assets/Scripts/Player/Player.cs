@@ -18,8 +18,12 @@ public class Player : MonoBehaviour
     
 
     public Transform pointZero, pointOne;
+    
 
     public Text gameOver;
+    
+
+    public Camera camera;
     
     
     // Start is called before the first frame update
@@ -55,7 +59,10 @@ public class Player : MonoBehaviour
 
     public void parti ()
     {
-        speed = 4;
+        if (FaceExpressionManager.Singleton.currentFaceInstance != null)
+        {
+            speed = 4;   
+        }
     }
 
     IEnumerator GameOver()
