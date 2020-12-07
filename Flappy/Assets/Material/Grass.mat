@@ -90,6 +90,6 @@ Material:
     m_Colors:
     - _Color: {r: 0.19409901, g: 0.5754717, b: 0.09500711, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.22669332, g: 0.4716981, b: 0.051174805, a: 0}
+    - _MainColor: {r: 0.17259438, g: 0.3207547, b: 0.06505874, a: 0}
     - _PlayerPosition: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
